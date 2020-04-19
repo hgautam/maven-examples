@@ -1,6 +1,6 @@
-package com.hgautam.web;
+package com.hgautam.web.config;
 
-import com.hgautam.web.config.SpringConfig;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
