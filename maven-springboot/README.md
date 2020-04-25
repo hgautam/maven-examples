@@ -1,7 +1,7 @@
 # Maven - How to create a Java web application project
 Maven 3, Springboot  MVC
 
-## 1 Run and Test it with embedded web server.
+## Run and Test it with embedded web server.
 ```
 $ git clone https://github.com/hgautam/maven-examples.git
 $ cd maven-springboot  
