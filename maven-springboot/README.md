@@ -12,4 +12,6 @@ $ curl localhost:8080
 Greetings from Spring Boot!
 $ curl localhost:8080/actuator/health
 {"status":"UP"}
+# To run tests
+$ mvn clean install 
 ```
