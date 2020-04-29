@@ -5,10 +5,10 @@ Maven 3, Springboot  MVC
 ```
 $ git clone https://github.com/hgautam/maven-examples.git
 $ cd maven-springboot  
-$ mvn springboot:run
-$ curl localhost:8080
+$ mvn spring-boot:run
+$ curl http://localhost:8080
 Greetings from Spring Boot!
-$ curl localhost:8080/actuator/health
+$ curl http://localhost:8080/actuator/health
 {"status":"UP"}
 # To run tests
 $ mvn clean install 
