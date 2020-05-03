@@ -6,7 +6,7 @@ Maven, JUnit 5 + JaCoCo example + spotbugs + PMD
 $ git clone https://github.com/hgautam/maven-examples.git
 $ cd java-demo-app
 $ mvn clean test
-$ clean verify site
+$ mvn clean verify site
 
 # view report at 'target/site/jacoco/index.html'
 ```
