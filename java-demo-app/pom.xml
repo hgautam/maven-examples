@@ -28,6 +28,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs</artifactId>
+            <version>4.0.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <reporting>
@@ -43,14 +49,16 @@
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>${spotbugs.version}</version>
+                <!--
                 <dependencies>
-                 <!--overwrite dependency on spotbugs if you want to specify the version of spotbugs -->
+                 overwrite dependency on spotbugs if you want to specify the version of spotbugs
                     <dependency>
                         <groupId>com.github.spotbugs</groupId>
                         <artifactId>spotbugs</artifactId>
                         <version>4.0.2</version>
                     </dependency>
                 </dependencies>
+               -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
