@@ -1,6 +1,6 @@
 package com.hgautam.examples;
 
-public class IPExample {
+public class IPAddress {
 
     //Unused field
     private int abc;
