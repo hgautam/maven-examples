@@ -1,33 +1,29 @@
 package com.hgautam.web.controller;
 
-import com.hgautam.password.PasswordService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.Date;
 
 @Controller
 public class WelcomeController {
 
     private final Logger logger = LoggerFactory.getLogger(WelcomeController.class);
 
-    @Autowired
-    private PasswordService passwordService;
-
     @GetMapping("/")
-    public String welcome(@RequestParam(name = "query",
-            required = false, defaultValue = "123456") String query, Model model) {
-
-        logger.debug("Welcome to hgautam.com... Query : {}", query);
-
-        model.addAttribute("query", query);
-        model.addAttribute("hash", passwordService.hash(query));
-        model.addAttribute("algorithm", passwordService.algorithm());
-
+    public String index(Model model) {
+        logger.debug("Welcome to mysite.com...");
+        model.addAttribute("msg", getMessage());
+        model.addAttribute("today", new Date());
         return "index";
+
+    }
+
+    public String getMessage() {
+        return "Hello World";
     }
 
 }
