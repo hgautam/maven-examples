@@ -36,6 +36,13 @@
             <artifactId>password-sha</artifactId>
             <version>1.0</version>
         </dependency>
+             
+        <!-- password -->
+        <dependency>
+            <groupId>com.hgautam.password</groupId>
+            <artifactId>password</artifactId>
+            <version>1.0</version>
+        </dependency>
         
 
         <dependency>
