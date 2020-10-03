@@ -21,7 +21,7 @@ public class WelcomeController {
     public String welcome(@RequestParam(name = "query",
             required = false, defaultValue = "123456") String query, Model model) {
 
-        logger.debug("Welcome to mkyong.com... Query : {}", query);
+        logger.debug("Welcome to my world... Query : {}", query);
 
         model.addAttribute("query", query);
         model.addAttribute("hash", passwordService.hash(query));
