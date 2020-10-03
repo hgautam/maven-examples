@@ -1,6 +1,6 @@
 package com.hgautam.web.controller;
 
-import com.hgautam.password.PasswordService;
+import com.hgautam.password.PasswordServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ public class WelcomeController {
     private final Logger logger = LoggerFactory.getLogger(WelcomeController.class);
 
     @Autowired
-    private PasswordService passwordService;
+    private PasswordServiceImpl passwordService;
 
     @GetMapping("/")
     public String welcome(@RequestParam(name = "query",
