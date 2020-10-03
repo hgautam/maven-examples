@@ -15,7 +15,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({"com.mkyong"})
+@ComponentScan({"com.hgautam"})
 public class SpringConfig implements WebMvcConfigurer {
 
     @Autowired
