@@ -30,20 +30,13 @@
             <version>1.0</version>
         </dependency>
 
-        <!-- sha -->
+        <!-- sha
         <dependency>
             <groupId>com.hgautam.password</groupId>
             <artifactId>password-sha</artifactId>
             <version>1.0</version>
         </dependency>
-             
-        <!-- password -->
-        <dependency>
-            <groupId>com.hgautam.password</groupId>
-            <artifactId>password</artifactId>
-            <version>1.0</version>
-        </dependency>
-        
+        -->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -91,12 +84,6 @@
             <groupId>org.thymeleaf</groupId>
             <artifactId>thymeleaf-spring5</artifactId>
             <version>${thymeleaf.version}</version>
-        </dependency>
-             
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
         </dependency>
 
     </dependencies>
